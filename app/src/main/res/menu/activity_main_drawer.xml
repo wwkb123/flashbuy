@@ -3,58 +3,33 @@
 
     <group android:checkableBehavior="single">
         <item
-<<<<<<< HEAD
+
             android:id="@+id/cart"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/finished"
             android:title="Cart" />
         <item
             android:id="@+id/history"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@android:drawable/ic_menu_recent_history"
             android:title="History" />
         <item
             android:id="@+id/settings"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@android:drawable/ic_menu_manage"
             android:title="Settings" />
         <item
             android:id="@+id/help"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@android:drawable/ic_menu_help"
             android:title="Help" />
-=======
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
->>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
+
     </group>
 
     <item android:title="Communicate">
-        <menu>
+
             <item
-<<<<<<< HEAD
+
                 android:id="@+id/logout"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Log Out" />
-=======
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
->>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
-        </menu>
+
     </item>
 
 </menu>
