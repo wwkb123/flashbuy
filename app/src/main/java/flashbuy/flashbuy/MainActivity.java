@@ -115,8 +115,6 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-<<<<<<< HEAD
         if (id == R.id.cart) {
             // Handle the camera action
         } else if (id == R.id.history) {
@@ -125,20 +123,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.help) {
 
-        } else if (id == R.id.logout) {
-=======
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
->>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
+        } else if (id == R.id.logout){
 
         }
 
