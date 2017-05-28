@@ -23,13 +23,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+<<<<<<< HEAD
+        android:text="Hello, Tommy"
+=======
         android:text="Android Studio"
+>>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:text="tommy@gmail.com" />
+=======
         android:text="android.studio@android.com" />
+>>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
 
 </LinearLayout>
