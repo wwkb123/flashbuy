@@ -15,6 +15,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
@@ -22,6 +25,9 @@ import com.google.zxing.Result;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, ZXingScannerView.ResultHandler{
     private ZXingScannerView mScannerView;
+
+
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -60,12 +66,15 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void handleResult(Result result) {
         //Do anything with result here :D
-        Log.w("handleResult", result.getText());
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Scan result");
-        builder.setMessage(result.getText());
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+//
+//        Log.w("handleResult", result.getText());
+//        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+//        builder.setTitle("Scan result");
+//        builder.setMessage(result.getText() );
+//        AlertDialog alertDialog = builder.create();
+////        myRef.setValue("ggg");
+//        alertDialog.show();
+
 
         //Resume scanning
         //mScannerView.resumeCameraPreview(this);
@@ -79,15 +88,7 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if(result != null && resultCode == RESULT_OK) {
-            // if user scanned and the result is valid, do your stuff here
-        } else {
-//            mScannerView.stopCamera();
-        }
-    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -103,9 +104,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -118,6 +119,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.cart) {
             // Handle the camera action
         } else if (id == R.id.history) {
+        Intent i= new Intent(this,history.class);
+            startActivity(i);
 
         } else if (id == R.id.settings) {
 

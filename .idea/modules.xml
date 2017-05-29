@@ -3,11 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/flashbuy-master.iml" filepath="$PROJECT_DIR$/flashbuy-master.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/flashbuy.iml" filepath="$PROJECT_DIR$/flashbuy.iml" />
->>>>>>> 41789b3bf3963c667db878f26e5941d1a608f9d3
     </modules>
   </component>
 </project>
