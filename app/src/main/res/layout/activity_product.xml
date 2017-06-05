@@ -28,7 +28,6 @@ tools:context="flashbuy.flashbuy.product">
         android:layout_below="@+id/imageView2"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="56dp"
-        android:onClick="onCancelClick"
         android:text="Cancel" />
 
     <Button
@@ -153,16 +152,18 @@ tools:context="flashbuy.flashbuy.product">
             android:id="@+id/textView20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Allergy Information:" />
+            android:text="Allergy Information:"
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="   " />
+            android:text="   "
+            android:textColor="@android:color/holo_red_dark" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textView17"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" " />

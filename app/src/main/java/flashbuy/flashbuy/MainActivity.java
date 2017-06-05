@@ -1,11 +1,14 @@
 package flashbuy.flashbuy;
 
 import android.app.AlertDialog;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -35,6 +38,11 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Fragment fragment=new home();
+        FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.mainFrame,fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -54,8 +62,13 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
     public void onClick(View v){
-       Intent i= new Intent(MainActivity.this,scan.class);
-        startActivity(i);
+//       Intent i= new Intent(MainActivity.this,scan.class);
+//        startActivity(i);
+        Fragment fragment=new scan();
+        FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.mainFrame,fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 //    @Override
 //    protected void onPause() {
@@ -116,19 +129,27 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        if (id == R.id.cart) {
-            // Handle the camera action
+        Fragment fragment=null;
+        if(id==R.id.home){
+            fragment=new home();
+        } else if (id == R.id.cart) {
+            fragment=new cart();
         } else if (id == R.id.history) {
-        Intent i= new Intent(this,history.class);
-            startActivity(i);
+//        Intent i= new Intent(this,history.class);
+//            startActivity(i);
+            fragment=new history();
 
         } else if (id == R.id.settings) {
-
+            fragment=new settings();
         } else if (id == R.id.help) {
-
+            fragment=new help();
         } else if (id == R.id.logout){
-
+            fragment=new help();
         }
+        FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.mainFrame,fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

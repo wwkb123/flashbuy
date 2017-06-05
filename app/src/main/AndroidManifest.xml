@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,6 +25,8 @@
         <activity android:name=".scan" />
         <activity android:name=".product" />
         <activity android:name=".history"></activity>
+        <activity android:name=".fingerprint"></activity>
+        <activity android:name=".test"></activity>
     </application>
 
 </manifest>

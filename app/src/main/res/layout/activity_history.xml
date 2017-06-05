@@ -4,19 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context="flashbuy.flashbuy.history">
 
     <TextView
         android:id="@+id/text_history"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="History"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="54dp"
-        android:text="History"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="30dp" />
+        android:layout_below="@+id/text_history"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="29dp"
+        android:text="05/20/2017" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:layout_marginTop="25dp"
+        android:textColor="@android:color/black"
+        android:text="05/01/2017" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView35"
+        android:layout_alignStart="@+id/textView35"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView35"
+        android:layout_marginTop="26dp"
+        android:text="04/18/2017" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:text="Walmart" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_alignTop="@+id/textView35"
+        android:textColor="@android:color/black"
+        android:text="Costco" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView36"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:textColor="@android:color/black"
+        android:text="Costco" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:textColor="@android:color/black"
+        android:text="$4.50" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView38"
+        android:layout_alignLeft="@+id/textView40"
+        android:textColor="@android:color/black"
+        android:layout_alignStart="@+id/textView40"
+        android:text="$50.00" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView41"
+        android:textColor="@android:color/black"
+        android:layout_alignStart="@+id/textView41"
+        android:layout_alignTop="@+id/textView39"
+        android:text="$10.00" />
 </RelativeLayout>
